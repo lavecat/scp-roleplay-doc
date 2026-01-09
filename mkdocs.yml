@@ -1,5 +1,103 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: Scp Roleplay Non official Doc
 site_url: https://lavecat.github.io/scp-roleplay-doc/
+repo_url: https://github.com/lavecat/scp-roleplay-doc
+site_author: lavecat
+repo_name: scp-roleplay-doc
+copyright: © lavecat 2026. All rights reserved.
+
 theme:
   name: material
+  custom_dir: docs/overrides
+  #logo: ./assets/branding/icon.png
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Light Mode
+      primary: deep purple
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Dark Mode
+      primary: deep purple
+      accent: deep orange
+
+  #favicon: ./assets/branding/favicon.png
+
+  #icon:
+  #  repo: fontawesome/brands/gitlab
+  #repo: gitlab
+
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - content.action.edit
+    - search.highlight
+    - navigation.tracking
+    - navigation.path
+    - navigation.footer
+    - announce.dismiss
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+    - content.code.annotation
+    - content.code.annotate
+
+  language: en
+
+nav:
+  - Home: index.md
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - footnotes
+
+extra:
+  alternate:
+    - name: 🇬🇧 English
+      link: /
+      lang: en
+    - name: 🇫🇷 Français
+      link: /fr/
+      lang: fr
+
+plugins:
+  - search
+  - social:
+      cards_layout_options:
+        font_family: Outfit
+  - i18n:
+      docs_structure: folder
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+          site_name: "Scp Roleplay Unofficial Doc"
+        - locale: fr
+          name: Français
+          build: true
+          site_name: "Documentation Scp Roleplay Non Officiel"
+          copyright: © lavecat 2026. Tous droits réservés.
+          nav_translations:
+            Home: Accueil
