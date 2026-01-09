@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block announce %}
+  {% if config.theme.language == "fr" %}
+    La documentation est en cours de rédaction et de développement. Certaines informations peuvent être inexactes. N’hésitez pas à nous faire part de vos retours via <a href="https://github.com/lavecat/scp-roleplay-doc" target="_blank">Github</a>.
+  {% else %}
+    The documentation is currently being written and developed. Some information may be inaccurate. Please feel free to send us your feedback via <a href="https://github.com/lavecat/scp-roleplay-doc" target="_blank">Github</a>.
+  {% endif %}
+{% endblock %}
