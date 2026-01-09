@@ -11,27 +11,25 @@ theme:
   custom_dir: docs/overrides
   #logo: ./assets/branding/icon.png
   palette:
-    # Dark Mode
     - scheme: slate
       toggle:
         icon: material/brightness-4
         name: Light Mode
-      primary: deep purple
-      accent: deep purple
+      primary: grey
+      accent: grey
 
-    # Light Mode
     - scheme: default
       toggle:
         icon: material/brightness-7
         name: Dark Mode
-      primary: deep purple
-      accent: deep orange
+      primary: blue grey
+      accent: grey
 
   #favicon: ./assets/branding/favicon.png
 
-  #icon:
-  #  repo: fontawesome/brands/gitlab
-  #repo: gitlab
+  icon:
+    repo: fontawesome/brands/github
+  repo: github
 
   features:
     - navigation.tabs
@@ -53,6 +51,9 @@ theme:
 nav:
   - Home: index.md
 
+  - Addons:
+      - addons/index.md
+
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
@@ -73,10 +74,10 @@ markdown_extensions:
 extra:
   alternate:
     - name: 🇬🇧 English
-      link: /
+      link: /scp-roleplay-doc/
       lang: en
     - name: 🇫🇷 Français
-      link: /fr/
+      link: /scp-roleplay-doc/fr/
       lang: fr
 
 plugins:
