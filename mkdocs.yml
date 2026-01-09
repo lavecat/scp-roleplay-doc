@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: My Docs
+site_name: Scp Roleplay Non official Doc
 site_url: https://lavecat.github.io/scp-roleplay-doc/
 theme:
   name: material
